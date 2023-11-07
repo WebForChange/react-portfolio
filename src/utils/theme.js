@@ -40,7 +40,7 @@ const theme = createTheme({
     surface: {
       main: "#fff7cc",
       dark: "#D9BE6C",
-      darkMode: "#292514",
+      darkMode: "#ffffff",
     },
     highlight: {
       main: "#ffffff",
