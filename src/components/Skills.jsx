@@ -62,7 +62,7 @@ function Skills() {
           >
             <Grid item xs={9}>
               <Typography
-                variant="h4"
+                variant="h5"
                 component="h2"
                 sx={{ color: theme.palette.text.dark, mb: "3vh" }}
               >

@@ -12,13 +12,11 @@ const theme = createTheme({
       background: "#fff7cc",
       alt: "#fad054",
       darkGold: "#CCB129",
-      darkMode: "#ffffff",
     },
     tertiary: {
       main: "#A3A3A3",
       background: "#A3A3A3",
       highlight: "#F8F8F8",
-      darkMode: "#ffffff",
     },
     text: {
       main: "#403d39",
@@ -26,12 +24,10 @@ const theme = createTheme({
       alt: "#807160",
       link: "#ffffff",
       muted: "#ffffff",
-      darkMode: "#ffffff",
     },
     neutral: {
       main: "#ffffff",
       middleDark: "#666666",
-      darkMode: "#0a0a0a",
     },
     background: {
       main: "#ffffff",
@@ -40,7 +36,6 @@ const theme = createTheme({
     surface: {
       main: "#fff7cc",
       dark: "#D9BE6C",
-      darkMode: "#ffffff",
     },
     highlight: {
       main: "#ffffff",

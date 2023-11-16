@@ -15,102 +15,79 @@ export default function Portrait() {
   const centerAlignment = { alignItems: "center", justifyContent: "center" };
 
   return (
-    <Grid item xs={12} sm={5} md={4} lg={3} xl={2} height="100vh">
+    <Grid
+      item
+      container
+      xs={12}
+      sm={5}
+      md={4}
+      lg={3}
+      xl={2}
+      height="100vh"
+      sx={{
+        flexDirection: "column",
+        ...centerAlignment,
+      }}
+    >
+      <Avatar
+        component={Paper}
+        elevation={3}
+        src={IMAGES.portrait}
+        alt="Tonio Suessdorf"
+        sx={{
+          width: "12rem",
+          height: "12rem",
+          border: `1px solid ${theme.palette.border.main}`,
+        }}
+      />
+
+      <Typography
+        align="center"
+        sx={{
+          mt: "4vh",
+          color: theme.palette.text.dark,
+          letterSpacing: "2px",
+        }}
+      >
+        {constants.OWNER_NAME}
+      </Typography>
+      <Typography sx={{ color: theme.palette.text.alt }}>
+        {constants.SHORT_DESC}
+      </Typography>
+
+      {/* Icon Buttons */}
       <Grid
         container
+        spacing={1.5}
         sx={{
-          height: "100%",
-          flexDirection: "row",
+          width: "100%",
+          mt: "1.5vh",
+          pb: "6vh",
           ...centerAlignment,
         }}
       >
-        <Grid
-          item
-          xs={9}
-          sx={{
-            flexDirection: "column",
-            ...centerAlignment,
-          }}
-        >
-          <Paper
-            elevation={10}
-            sx={{ pt: "6vh", backgroundColor: theme.palette.neutral.main }}
+        <Grid item>
+          <a
+            target="_top"
+            rel="noopener noreferrer"
+            href="mailto:test@example.com"
           >
-            <Grid
-              container
-              sx={{
-                height: "100%",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Grid item xs={7}>
-                <Avatar
-                  component={Paper}
-                  elevation={3}
-                  src={IMAGES.portrait}
-                  alt="Tonio Suessdorf"
-                  sx={{
-                    width: "100%",
-                    height: "100%",
-                    border: `1px solid ${theme.palette.border.main}`,
-                  }}
-                />
-              </Grid>
+            <PrimaryIconButton>
+              <AiOutlineMail style={{ fontSize: "1.3rem" }} />
+            </PrimaryIconButton>
+          </a>
+        </Grid>
 
-              {/* Name and short description */}
-              <Typography
-                align="center"
-                sx={{
-                  mt: "4vh",
-                  color: theme.palette.text.dark,
-                  letterSpacing: "2px",
-                }}
-              >
-                {constants.OWNER_NAME}
-              </Typography>
-              <Typography sx={{ color: theme.palette.text.alt }}>
-                {constants.SHORT_DESC}
-              </Typography>
-
-              {/* Icon Buttons */}
-              <Grid
-                container
-                spacing={1.5}
-                sx={{
-                  width: "100%",
-                  mt: "1.5vh",
-                  pb: "6vh",
-                  ...centerAlignment,
-                }}
-              >
-                <Grid item>
-                  <a
-                    target="_top"
-                    rel="noopener noreferrer"
-                    href="mailto:test@example.com"
-                  >
-                    <PrimaryIconButton>
-                      <AiOutlineMail style={{ fontSize: "1.3rem" }} />
-                    </PrimaryIconButton>
-                  </a>
-                </Grid>
-
-                <Grid item>
-                  <a
-                    target="_top"
-                    rel="noopener noreferrer"
-                    href="https://github.com/thoiar"
-                  >
-                    <PrimaryIconButton>
-                      <FiGithub style={{ fontSize: "1.3rem" }} />
-                    </PrimaryIconButton>
-                  </a>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Paper>
+        <Grid item>
+          <a
+            target="_top"
+            rel="noopener noreferrer"
+            href="https://github.com/thoiar"
+          >
+            <PrimaryIconButton>
+              <FiGithub style={{ fontSize: "1.3rem" }} />
+            </PrimaryIconButton>
+          </a>
         </Grid>
       </Grid>
     </Grid>

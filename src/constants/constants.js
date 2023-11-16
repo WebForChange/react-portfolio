@@ -7,6 +7,5 @@ const constants = {
   SHORT_DESC: "Web Developer",
 
   IMPRINT_TITLE: "Imprint",
-  PORTFOLIO_SECTION_TITLE: "Portfolio",
 };
 export default constants;

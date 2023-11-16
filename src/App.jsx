@@ -13,7 +13,6 @@ import Home from "./components/Home";
 import Privacy from "./components/Privacy";
 import Imprint from "./components/Imprint";
 import theme from "./utils/theme";
-import darkTheme from "./utils/themeDark";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
