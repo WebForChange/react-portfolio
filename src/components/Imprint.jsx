@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Grid } from "@mui/material";
-import constants from "../constants/constants";
+import ownerConstants from "../constants/ownerConstants";
 import { styled } from "@mui/system";
 
 const StyledBodyParagraph = styled(Typography)({
@@ -32,27 +32,27 @@ export default function Imprint() {
             justifyContent: "center",
           }}
         >
-          {constants.IMPRINT_TITLE}
+          {ownerConstants.IMPRINT_TITLE}
         </Typography>
 
         <StyledBodyParagraph variant="body">
-          {constants.OWNER_NAME}
+          {ownerConstants.OWNER_NAME}
         </StyledBodyParagraph>
 
         <StyledBodyParagraph variant="body">
-          {constants.OWNER_ADDRESS}
+          {ownerConstants.OWNER_ADDRESS}
         </StyledBodyParagraph>
         <StyledBodyParagraph variant="body">
-          {constants.OWNER_LOCATION}
+          {ownerConstants.OWNER_LOCATION}
         </StyledBodyParagraph>
         <StyledBodyParagraph variant="body">
-          {constants.OWNER_EMAIL}
+          {ownerConstants.OWNER_EMAIL}
         </StyledBodyParagraph>
         <StyledBodyParagraph variant="body">
           {constants.OWNER_PHONE}
         </StyledBodyParagraph>
         <StyledBodyParagraph variant="body">
-          {constants.OWNER_ADDRESS}
+          {ownerConstants.OWNER_ADDRESS}
         </StyledBodyParagraph>
       </Grid>
     </Grid>

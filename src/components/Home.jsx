@@ -11,10 +11,10 @@ export default function Home() {
   const theme = useTheme();
 
   return (
-    <Grid container justifyContent="space-evenly">
+    <Grid container justifyContent="center">
       <Portrait />
-      <Portfolio />
       <Skills />
+      <Portfolio />
       <Footer />
     </Grid>
   );

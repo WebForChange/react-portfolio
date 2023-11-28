@@ -1,93 +1,153 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import IMAGES from "../assets/Images";
-import constants from "../constants/constants";
+import ownerConstants from "../constants/ownerConstants";
 import PrimaryIconButton from "./Navigation/PrimaryIconButton";
+
+const CustomIconButton = (props, link) => {
+  return (
+    <Grid item sx={{ px: "0.35rem" }}>
+      <a target="_top" rel="noopener noreferrer" href={link}>
+        <PrimaryIconButton>{props.children}</PrimaryIconButton>
+      </a>
+    </Grid>
+  );
+};
 
 export default function Portrait() {
   const theme = useTheme();
 
-  const centerAlignment = { alignItems: "center", justifyContent: "center" };
+  const centerAlignment = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  };
 
   return (
     <Grid
       item
       container
       xs={12}
-      sm={5}
-      md={4}
-      lg={3}
-      xl={2}
-      height="100vh"
       sx={{
-        flexDirection: "column",
         ...centerAlignment,
+        height: "100dvh",
       }}
     >
-      <Avatar
-        component={Paper}
-        elevation={3}
-        src={IMAGES.portrait}
-        alt="Tonio Suessdorf"
-        sx={{
-          width: "12rem",
-          height: "12rem",
-          border: `1px solid ${theme.palette.border.main}`,
-        }}
-      />
-
-      <Typography
-        align="center"
-        sx={{
-          mt: "4vh",
-          color: theme.palette.text.dark,
-          letterSpacing: "2px",
-        }}
-      >
-        {constants.OWNER_NAME}
-      </Typography>
-      <Typography sx={{ color: theme.palette.text.alt }}>
-        {constants.SHORT_DESC}
-      </Typography>
-
-      {/* Icon Buttons */}
       <Grid
+        item
         container
-        spacing={1.5}
+        xs={12}
+        md={3}
         sx={{
-          width: "100%",
-          mt: "1.5vh",
-          pb: "6vh",
           ...centerAlignment,
+          flexDirection: "column",
         }}
       >
-        <Grid item>
-          <a
-            target="_top"
-            rel="noopener noreferrer"
-            href="mailto:test@example.com"
+        <Box
+          sx={{
+            display: "flex",
+            width: "12rem",
+            height: "12rem",
+          }}
+        >
+          <Avatar
+            component={Paper}
+            elevation={3}
+            src={IMAGES.portrait}
+            alt="Tonio Suessdorf"
+            sx={{
+              width: "100%",
+              height: "100%",
+              border: `1px solid ${theme.palette.border.main}`,
+            }}
+          />
+          <Box
+            sx={{
+              position: "relative",
+              display: { xs: "none", md: "flex" },
+              flexDirection: "column",
+              alignItems: "start",
+              justifyContent: "center",
+              flexShrink: "0",
+              width: "14rem",
+              height: "80%",
+              top: "1rem",
+              left: "2rem",
+            }}
           >
-            <PrimaryIconButton>
-              <AiOutlineMail style={{ fontSize: "1.3rem" }} />
-            </PrimaryIconButton>
-          </a>
-        </Grid>
+            <Typography
+              align="center"
+              variant="body1"
+              component="h2"
+              sx={{
+                color: theme.palette.text.dark,
+                letterSpacing: "2px",
+              }}
+            >
+              {ownerConstants.OWNER_NAME}
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{
+                color: theme.palette.text.alt,
+              }}
+            >
+              {ownerConstants.SHORT_DESC}
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{
+                mt: "0.7rem",
+                color: theme.palette.text.alt,
+              }}
+            >
+              {ownerConstants.LONG_DESC}
+            </Typography>
+          </Box>
+        </Box>
 
-        <Grid item>
-          <a
-            target="_top"
-            rel="noopener noreferrer"
-            href="https://github.com/thoiar"
-          >
-            <PrimaryIconButton>
-              <FiGithub style={{ fontSize: "1.3rem" }} />
-            </PrimaryIconButton>
-          </a>
+        <Typography
+          align="center"
+          sx={{
+            display: { sx: "flex", md: "none" },
+            mt: "4vh",
+            color: theme.palette.text.dark,
+            letterSpacing: "2px",
+          }}
+        >
+          {ownerConstants.OWNER_NAME}
+        </Typography>
+        <Typography
+          sx={{
+            display: { sx: "flex", md: "none" },
+            color: theme.palette.text.alt,
+          }}
+        >
+          {ownerConstants.SHORT_DESC}
+        </Typography>
+
+        {/* Icon Buttons */}
+        <Grid
+          container
+          sx={{
+            ...centerAlignment,
+            width: "100%",
+            mt: "4vh",
+            mb: "6vh",
+          }}
+        >
+          <CustomIconButton link="mailto:test@example.com">
+            <AiOutlineMail style={{ fontSize: "1.5rem" }} />
+          </CustomIconButton>
+
+          <CustomIconButton link="https://github.com/thoiar">
+            <FiGithub style={{ fontSize: "1.5rem" }} />
+          </CustomIconButton>
         </Grid>
       </Grid>
     </Grid>

@@ -8,43 +8,38 @@ export default function CarouselItem(props) {
   return (
     <Box
       sx={{
-        height: "100%",
         display: "flex",
+        height: "60vh",
         flexDirection: "column",
-        // alignItems: "center",
-        // justifyContent: "center",
-        // flexWrap: "nowrap",
+        overflow: "hidden",
       }}
     >
-      {/* Image */}
-      <Box style={{ width: "100%" }}>
-        <Box
-          sx={{
-            width: "100%",
-            paddingBottom: "56.25%",
-            overflow: "hidden",
+      <Box
+        sx={{
+          height: "30vh",
+          overflow: "hidden",
+        }}
+      >
+        <img
+          alt={props.item.imageCredit}
+          src={props.item.image}
+          style={{
+            height: "100%",
+            objectFit: "cover",
+            top: 0,
+            left: 0,
           }}
-        >
-          <img
-            alt={props.item.imageCredit}
-            src={props.item.image}
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              position: "absolute",
-              top: 0,
-              left: 0,
-            }}
-          />
-        </Box>
+        />
       </Box>
 
-      {/* Text */}
-      <Box style={{ width: "100%" }}>
-        <Typography style={{ width: "100%" }}>
-          {props.item.description}
-        </Typography>
+      <Box
+        style={
+          {
+            //   height: "30vh",
+          }
+        }
+      >
+        <Typography style={{}}>{props.item.description}</Typography>
       </Box>
     </Box>
   );

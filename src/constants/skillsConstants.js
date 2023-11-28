@@ -23,6 +23,9 @@ const TECH_SKILLS = [
   "Material UI",
   "Bootstrap",
   "Vitest",
+  "Node.js",
+  "Express",
+  "Git",
   "Test Driven Development",
   "Responsive Design",
 ];
