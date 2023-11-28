@@ -35,10 +35,10 @@ function Skills() {
       xs={12}
       sm={6}
       sx={{
-        height: "100vh",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "start",
+        mb: "4rem",
       }}
     >
       {/* Title */}

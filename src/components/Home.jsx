@@ -14,7 +14,7 @@ export default function Home() {
     <Grid container justifyContent="center">
       <Portrait />
       <Skills />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Footer />
     </Grid>
   );
