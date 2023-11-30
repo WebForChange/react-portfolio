@@ -42,6 +42,14 @@ const theme = createTheme({
     },
     border: { main: "#FFD500", alt: "#ffffff" },
   },
+  typography: {
+    h5: {
+      fontSize: "2rem",
+      color: "#333333",
+      marginBottom: "1rem",
+      letterSpacing: "0.05rem",
+    },
+  },
 });
 
 export default theme;

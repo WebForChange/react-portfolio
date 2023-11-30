@@ -32,8 +32,9 @@ function Skills() {
     <Grid
       container
       item
-      xs={12}
-      sm={6}
+      xs={10}
+      sm={7}
+      lg={4}
       sx={{
         flexDirection: "column",
         alignItems: "center",
@@ -42,11 +43,7 @@ function Skills() {
       }}
     >
       {/* Title */}
-      <Typography
-        variant="h6"
-        component="h2"
-        sx={{ display: "flex", color: theme.palette.text.dark, mb: "3vh" }}
-      >
+      <Typography variant="h5" component="h2" sx={{ display: "flex" }}>
         {SKILLS_SECTION_TITLE}
       </Typography>
 

@@ -49,7 +49,7 @@ export default function Imprint() {
           {ownerConstants.OWNER_EMAIL}
         </StyledBodyParagraph>
         <StyledBodyParagraph variant="body">
-          {constants.OWNER_PHONE}
+          {ownerConstants.OWNER_PHONE}
         </StyledBodyParagraph>
         <StyledBodyParagraph variant="body">
           {ownerConstants.OWNER_ADDRESS}
