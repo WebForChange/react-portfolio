@@ -2,22 +2,16 @@ const PORTFOLIO_SECTION_TITLE = "Portfolio";
 
 const CAROUSEL_ITEMS = [
   {
-    title: "React Material UI Website",
-    description: "React Material UI Website",
-    image: "/react.jpg",
-    imageCredit: "Photo by Rahul Mishra on Unsplash",
+    title: "This Website",
+    description: `This portfolio Website was built using React and Material UI. 
+    It showcases my React and MUI skills as well as responsive design and development.`,
+    source: "https://github.com/thoiar/react-portfolio",
   },
   {
     title: "Responsive JavaScript Website",
-    description: "Responsive JavaScript Website",
-    image: "/responsive.jpg",
-    imageCredit: "Photo by Firmbee.com on Unsplash",
-  },
-  {
-    title: "Full-Stack Website",
-    description: "Full-stack web Application (WIP)",
-    image: "/full-stack.jpg",
-    imageCredit: "Photo by Florian Krumm on Unsplash",
+    description: `This was my first Website. It was built using vanilla JavaScript and CSS. 
+    Next to a responsive navbar, it shows my first little achievements in responsive layout.`,
+    source: "https://github.com/thoiar/portfolio-website",
   },
 ];
 

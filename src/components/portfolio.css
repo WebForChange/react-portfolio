@@ -47,6 +47,7 @@
   border-left: 8px solid #fff;
 }
 .carousel-root {
+  max-width: 100%;
   outline: none;
 }
 .carousel {

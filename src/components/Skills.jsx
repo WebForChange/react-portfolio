@@ -32,13 +32,14 @@ function Skills() {
     <Grid
       container
       item
-      xs={10}
-      sm={7}
-      lg={4}
+      xs={11}
+      sm={8}
+      lg={5}
       sx={{
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "start",
+        px: "2rem",
         mb: "4rem",
       }}
     >
