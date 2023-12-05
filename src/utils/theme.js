@@ -46,7 +46,7 @@ const theme = createTheme({
     h5: {
       fontSize: "2rem",
       color: "#333333",
-      marginBottom: "1rem",
+      marginBottom: "1.7rem",
       letterSpacing: "0.05rem",
     },
   },

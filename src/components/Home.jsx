@@ -26,8 +26,8 @@ export default function Home() {
       <Portrait />
       <About />
       <Skills />
-      {/* <SoftSkills /> */}
-      {/* <Portfolio /> */}
+      <SoftSkills />
+      <Portfolio />
       <Footer />
     </Grid>
   );

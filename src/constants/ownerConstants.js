@@ -10,7 +10,7 @@ const ownerConstants = {
 
   IMPRINT_TITLE: "Imprint",
   ABOUT_TITLE: "About Me",
-  ABOUT_PROFESSIONAL: `Hi, my name is Tonio. I am a Berlin-based web developer who enjoys both, English 
+  ABOUT_PROFESSIONAL: `Hi, my name is Tonio Suessdorf. I am a Berlin-based web developer who enjoys both, English 
   and German work environments. I hold a M.Sc. degree in Media Informatics and  
   specialize in React Frontend Development.`,
 

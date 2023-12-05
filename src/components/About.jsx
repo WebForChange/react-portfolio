@@ -7,23 +7,25 @@ const About = () => {
     <Grid
       container
       item
-      xs={9}
-      sm={7}
-      lg={4}
+      xs={10}
+      sm={8}
+      md={7}
+      lg={5}
       sx={{
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "start",
+        px: "2rem",
         mb: "4rem",
       }}
     >
       <Typography variant="h5" component="h2">
         {ownerConstants.ABOUT_TITLE}
       </Typography>
-      <Typography align="justify">
+      <Typography variant="body1" align="justify">
         {ownerConstants.ABOUT_PROFESSIONAL}
       </Typography>
-      <Typography align="justify" sx={{ pt: "1rem" }}>
+      <Typography variant="body1" align="justify" sx={{ pt: "1rem" }}>
         {ownerConstants.ABOUT_PERSON}
       </Typography>
     </Grid>
