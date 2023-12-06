@@ -10,6 +10,7 @@ function SoftSkills() {
     <Grid
       container
       item
+      component="section"
       xs={10}
       sm={8}
       md={7}
@@ -22,14 +23,15 @@ function SoftSkills() {
         mb: "4rem",
       }}
     >
-      {/* Title */}
       <Typography variant="h5" component="h2" sx={{ display: "flex" }}>
         {SOFT_SKILLS_TITLE}
       </Typography>
-      <Typography align="justify" sx={{ mb: "1rem" }}>
-        {SOFT_SKILLS[0]}
-      </Typography>
-      <Typography align="justify">{SOFT_SKILLS[1]}</Typography>
+      <article>
+        <Typography align="justify" sx={{ mb: "1rem" }}>
+          {SOFT_SKILLS[0]}
+        </Typography>
+        <Typography align="justify">{SOFT_SKILLS[1]}</Typography>
+      </article>
     </Grid>
   );
 }

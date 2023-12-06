@@ -46,6 +46,7 @@ export default function Portfolio() {
     <Grid
       container
       item
+      component="section"
       xs={11}
       sm={9}
       md={6}

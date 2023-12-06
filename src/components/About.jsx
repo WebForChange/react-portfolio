@@ -7,6 +7,7 @@ const About = () => {
     <Grid
       container
       item
+      component="section"
       xs={10}
       sm={8}
       md={7}
@@ -22,12 +23,14 @@ const About = () => {
       <Typography variant="h5" component="h2">
         {ownerConstants.ABOUT_TITLE}
       </Typography>
-      <Typography variant="body1" align="justify">
-        {ownerConstants.ABOUT_PROFESSIONAL}
-      </Typography>
-      <Typography variant="body1" align="justify" sx={{ pt: "1rem" }}>
-        {ownerConstants.ABOUT_PERSON}
-      </Typography>
+      <article>
+        <Typography variant="body1" align="justify">
+          {ownerConstants.ABOUT_PROFESSIONAL}
+        </Typography>
+        <Typography variant="body1" align="justify" sx={{ pt: "1rem" }}>
+          {ownerConstants.ABOUT_PERSON}
+        </Typography>
+      </article>
     </Grid>
   );
 };

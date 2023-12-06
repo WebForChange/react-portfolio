@@ -4,7 +4,7 @@ import { Box, Grid, Typography } from "@mui/material";
 
 export default function Footer() {
   return (
-    <Box sx={{ backgroundColor: "#fefaec", width: "100vw" }}>
+    <Box component="footer" sx={{ backgroundColor: "#fefaec", width: "100vw" }}>
       <Grid
         container
         spacing={2}
