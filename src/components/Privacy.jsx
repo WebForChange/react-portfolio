@@ -1,3 +1,9 @@
+/*
+ * Created on Wed Dec 06 2023
+ *
+ * Copyright (c) 2023 Tonio Suessdorf
+ */
+
 import React from "react";
 import { Grid, Typography } from "@mui/material";
 import List from "@mui/material/List";

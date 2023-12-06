@@ -1,3 +1,9 @@
+/*
+ * Created on Wed Dec 06 2023
+ *
+ * Copyright (c) 2023 Tonio Suessdorf
+ */
+
 const privacy = {
   PRIVACY_TITLE: "Datenschutzerkärung",
   PRIVACY_BASICS_TITLE: "Grundlegendes",

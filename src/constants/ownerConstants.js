@@ -1,3 +1,9 @@
+/*
+ * Created on Wed Dec 06 2023
+ *
+ * Copyright (c) 2023 Tonio Suessdorf
+ */
+
 const ownerConstants = {
   OWNER_NAME: "Tonio Suessdorf",
   OWNER_ADDRESS: "Paul-Lincke-Ufer 44",

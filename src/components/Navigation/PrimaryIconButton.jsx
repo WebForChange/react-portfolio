@@ -6,6 +6,12 @@ import { styled } from "@mui/system";
 export default function PrimaryIconButton(props) {
   const theme = useTheme();
 
+  /*
+   * Created on Wed Dec 06 2023
+   *
+   * Copyright (c) 2023 Tonio Suessdorf
+   */
+
   const CustomIconButton = styled(IconButton)({
     "&:hover": {
       backgroundColor: theme.palette.primary.highlight,

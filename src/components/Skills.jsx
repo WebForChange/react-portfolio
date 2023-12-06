@@ -1,3 +1,9 @@
+/*
+ * Created on Wed Dec 06 2023
+ *
+ * Copyright (c) 2023 Tonio Suessdorf
+ */
+
 import React from "react";
 import { Typography, Box, Grid } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
