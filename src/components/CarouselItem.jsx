@@ -1,29 +1,35 @@
 import React from "react";
 import { Typography, Box, Grid, Paper } from "@mui/material";
 import Link from "@mui/material/Link";
-import { useTheme } from "@mui/material/styles";
 
 export default function CarouselItem(props) {
-  const theme = useTheme();
-  const item = props.item;
+  const project = props.item;
 
   return (
-    <Box component="article" sx={{ display: "flex", justifyContent: "center" }}>
+    <Box
+      aria-label="portfolio project"
+      component="article"
+      sx={{ display: "flex", justifyContent: "center" }}
+    >
       <Box sx={{ display: "flex", maxWidth: "85%", flexDirection: "column" }}>
         <Typography
+          aria-label="project title"
           variant="subtitle1"
           sx={{ fontSize: "1.2rem", mb: "0.1rem" }}
         >
-          {item.title}
+          {project.title}
         </Typography>
         <Link
-          href={item.source}
+          aria-label="source code"
+          href={project.source}
           variant="body1"
           sx={{ marginBottom: "0.5rem" }}
         >
           Source Code
         </Link>
-        <Typography align="justify">{item.description}</Typography>
+        <Typography aria-label="project description" align="justify">
+          {project.description}
+        </Typography>
       </Box>
     </Box>
   );

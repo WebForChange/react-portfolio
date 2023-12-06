@@ -8,6 +8,7 @@ const About = () => {
       container
       item
       component="section"
+      aria-label="about section"
       xs={10}
       sm={8}
       md={7}
@@ -24,10 +25,19 @@ const About = () => {
         {ownerConstants.ABOUT_TITLE}
       </Typography>
       <article>
-        <Typography variant="body1" align="justify">
+        <Typography
+          aria-label="about professional"
+          variant="body1"
+          align="justify"
+        >
           {ownerConstants.ABOUT_PROFESSIONAL}
         </Typography>
-        <Typography variant="body1" align="justify" sx={{ pt: "1rem" }}>
+        <Typography
+          aria-label="about personal"
+          variant="body1"
+          align="justify"
+          sx={{ mt: "1rem" }}
+        >
           {ownerConstants.ABOUT_PERSON}
         </Typography>
       </article>

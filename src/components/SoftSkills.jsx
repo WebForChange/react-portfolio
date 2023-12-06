@@ -11,6 +11,7 @@ function SoftSkills() {
       container
       item
       component="section"
+      aria-label="soft skills section"
       xs={10}
       sm={8}
       md={7}
@@ -23,10 +24,15 @@ function SoftSkills() {
         mb: "4rem",
       }}
     >
-      <Typography variant="h5" component="h2" sx={{ display: "flex" }}>
+      <Typography
+        aria-label="soft skills title"
+        variant="h5"
+        component="h2"
+        sx={{ display: "flex" }}
+      >
         {SOFT_SKILLS_TITLE}
       </Typography>
-      <article>
+      <article aria-label="soft skills">
         <Typography align="justify" sx={{ mb: "1rem" }}>
           {SOFT_SKILLS[0]}
         </Typography>
