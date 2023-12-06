@@ -29,7 +29,7 @@ export default function Portrait() {
   };
 
   return (
-    <Box sx={{ display: "flex", width: "100vw" }}>
+    <Box component="section" sx={{ display: "flex", width: "100vw" }}>
       <Grid
         item
         container
@@ -60,7 +60,7 @@ export default function Portrait() {
               component={Paper}
               elevation={3}
               src={IMAGES.portrait}
-              alt="Tonio Suessdorf"
+              alt="Tonio Suessdorf full-stack web developer professional portrait"
               sx={{
                 width: "100%",
                 height: "100%",

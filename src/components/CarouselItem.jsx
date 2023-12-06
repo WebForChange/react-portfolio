@@ -8,7 +8,7 @@ export default function CarouselItem(props) {
   const item = props.item;
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
+    <Box component="article" sx={{ display: "flex", justifyContent: "center" }}>
       <Box sx={{ display: "flex", maxWidth: "85%", flexDirection: "column" }}>
         <Typography
           variant="subtitle1"

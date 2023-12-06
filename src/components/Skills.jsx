@@ -32,6 +32,7 @@ function Skills() {
     <Grid
       container
       item
+      component="section"
       xs={11}
       sm={8}
       lg={5}
@@ -50,6 +51,7 @@ function Skills() {
 
       {/* Skills Container  */}
       <Box
+        component="article"
         sx={{
           display: "flex",
           width: "100%",
