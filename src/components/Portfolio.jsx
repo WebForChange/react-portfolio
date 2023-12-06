@@ -47,14 +47,15 @@ export default function Portfolio() {
       container
       item
       component="section"
+      aria-label="portfolio section"
       xs={11}
       sm={9}
       md={6}
       lg={5}
       sx={{ justifyContent: "center", mb: "4rem" }}
     >
-      {/* Back Button */}
       <Grid
+        aria-label="portfolio back button"
         item
         sm={1}
         sx={{
@@ -87,8 +88,8 @@ export default function Portfolio() {
           justifyContent: "center",
         }}
       >
-        {/* Section Title */}
         <Grid
+          aria-label="portfolio section title"
           item
           sx={{
             display: "flex",
@@ -108,8 +109,8 @@ export default function Portfolio() {
           </Typography>
         </Grid>
 
-        {/* Carousel */}
         <Grid
+          aria-label="portfolio projects carousel"
           item
           sx={{
             ...centerAlignment,
@@ -137,8 +138,8 @@ export default function Portfolio() {
           </Carousel>
         </Grid>
 
-        {/* Radio buttons indicating position in the carousel */}
         <Grid
+          aria-label="portfolio position indicator buttons"
           container
           item
           sx={{
@@ -171,6 +172,7 @@ export default function Portfolio() {
             >
               {CAROUSEL_ITEMS.map((item, index) => (
                 <FormControlLabel
+                  aria-label={`button project ${index + 1}`}
                   sx={{ mx: "1.2vw" }}
                   control={<Radio size="small" />}
                   value={index.toString()}
@@ -182,8 +184,8 @@ export default function Portfolio() {
         </Grid>
       </Grid>
 
-      {/* Forward Button */}
       <Grid
+        aria-label="portfolio forward button"
         item
         md={1}
         sx={{

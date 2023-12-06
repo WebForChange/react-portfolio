@@ -33,6 +33,7 @@ function Skills() {
       container
       item
       component="section"
+      aria-label="skills section"
       xs={11}
       sm={8}
       lg={5}

@@ -8,6 +8,7 @@ export default function Privacy() {
   return (
     <Grid
       container
+      aria-label="privacy page"
       sx={{
         display: "flex",
         py: "40px",

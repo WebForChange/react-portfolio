@@ -29,7 +29,11 @@ export default function Portrait() {
   };
 
   return (
-    <Box component="section" sx={{ display: "flex", width: "100vw" }}>
+    <Box
+      component="section"
+      aria-label="portrait section"
+      sx={{ display: "flex", width: "100vw" }}
+    >
       <Grid
         item
         container
@@ -60,6 +64,7 @@ export default function Portrait() {
               component={Paper}
               elevation={3}
               src={IMAGES.portrait}
+              aria-label="owner portrait image"
               alt="Tonio Suessdorf full-stack web developer professional portrait"
               sx={{
                 width: "100%",
@@ -85,6 +90,7 @@ export default function Portrait() {
                 align="center"
                 variant="body1"
                 component="h2"
+                aria-label="owner name"
                 sx={{
                   color: theme.palette.text.dark,
                   letterSpacing: "2px",
@@ -94,6 +100,7 @@ export default function Portrait() {
               </Typography>
               <Typography
                 variant="body2"
+                aria-label="owner short description"
                 sx={{
                   color: theme.palette.text.alt,
                 }}
@@ -102,6 +109,7 @@ export default function Portrait() {
               </Typography>
               <Typography
                 variant="body2"
+                aria-label="owner long description"
                 sx={{
                   mt: "0.7rem",
                   color: theme.palette.text.alt,
@@ -114,6 +122,7 @@ export default function Portrait() {
 
           <Typography
             align="center"
+            aria-label="owner name"
             sx={{
               display: { sx: "flex", md: "none" },
               mt: "4vh",
@@ -124,6 +133,7 @@ export default function Portrait() {
             {ownerConstants.OWNER_NAME}
           </Typography>
           <Typography
+            aria-label="owner short description"
             sx={{
               display: { sx: "flex", md: "none" },
               color: theme.palette.text.alt,
@@ -142,11 +152,17 @@ export default function Portrait() {
               mb: "6vh",
             }}
           >
-            <CustomIconButton link="mailto:test@example.com">
+            <CustomIconButton
+              aria-label="email owner"
+              link="mailto:test@example.com"
+            >
               <AiOutlineMail style={{ fontSize: "1.5rem" }} />
             </CustomIconButton>
 
-            <CustomIconButton link="https://github.com/thoiar">
+            <CustomIconButton
+              aria-label="github"
+              link="https://github.com/thoiar"
+            >
               <FiGithub style={{ fontSize: "1.5rem" }} />
             </CustomIconButton>
           </Grid>
