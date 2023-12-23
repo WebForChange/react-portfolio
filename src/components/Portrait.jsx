@@ -167,7 +167,7 @@ export default function Portrait() {
 
             <CustomIconButton
               aria-label="github"
-              link="https://github.com/thoiar"
+              link="https://github.com/WebForChange?tab=repositories"
             >
               <FiGithub style={{ fontSize: "1.5rem" }} />
             </CustomIconButton>
