@@ -1,3 +1,9 @@
+/*
+ * Created on Wed Dec 06 2023
+ *
+ * Copyright (c) 2023 Tonio Suessdorf
+ */
+
 import { BiLogoReact } from "react-icons/bi";
 import { TbBrandJavascript, TbBrandCss3 } from "react-icons/tb";
 import { AiOutlineHtml5 } from "react-icons/ai";

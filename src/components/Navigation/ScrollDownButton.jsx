@@ -1,3 +1,9 @@
+/*
+ * Created on Wed Dec 06 2023
+ *
+ * Copyright (c) 2023 Tonio Suessdorf
+ */
+
 import React, { useState } from "react";
 import PrimaryIconButton from "./PrimaryIconButton";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";

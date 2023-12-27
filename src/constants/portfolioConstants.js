@@ -1,3 +1,9 @@
+/*
+ * Created on Wed Dec 06 2023
+ *
+ * Copyright (c) 2023 Tonio Suessdorf
+ */
+
 const PORTFOLIO_SECTION_TITLE = "Portfolio";
 
 const CAROUSEL_ITEMS = [

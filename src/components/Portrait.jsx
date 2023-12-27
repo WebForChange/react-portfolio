@@ -1,3 +1,9 @@
+/*
+ * Created on Wed Dec 06 2023
+ *
+ * Copyright (c) 2023 Tonio Suessdorf
+ */
+
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
@@ -161,7 +167,7 @@ export default function Portrait() {
 
             <CustomIconButton
               aria-label="github"
-              link="https://github.com/thoiar"
+              link="https://github.com/WebForChange?tab=repositories"
             >
               <FiGithub style={{ fontSize: "1.5rem" }} />
             </CustomIconButton>
