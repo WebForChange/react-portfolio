@@ -15,10 +15,10 @@ import IMAGES from "../assets/Images";
 import ownerConstants from "../constants/ownerConstants";
 import PrimaryIconButton from "./Navigation/PrimaryIconButton";
 
-const CustomIconButton = (props, link) => {
+const CustomIconButton = (props) => {
   return (
     <Grid item sx={{ px: "0.35rem" }}>
-      <a target="_top" rel="noopener noreferrer" href={link}>
+      <a target="_top" rel="noopener noreferrer" href={props.url}>
         <PrimaryIconButton>{props.children}</PrimaryIconButton>
       </a>
     </Grid>
@@ -160,14 +160,14 @@ export default function Portrait() {
           >
             <CustomIconButton
               aria-label="email owner"
-              link="mailto:test@example.com"
+              url="mailto:suessdorf.dev@gmail.com"
             >
               <AiOutlineMail style={{ fontSize: "1.5rem" }} />
             </CustomIconButton>
 
             <CustomIconButton
               aria-label="github"
-              link="https://github.com/WebForChange?tab=repositories"
+              url="https://github.com/WebForChange"
             >
               <FiGithub style={{ fontSize: "1.5rem" }} />
             </CustomIconButton>
