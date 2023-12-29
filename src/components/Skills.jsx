@@ -48,6 +48,7 @@ function Skills() {
         alignItems: "center",
         justifyContent: "start",
         px: "2rem",
+        mt: "2rem",
         mb: "4rem",
       }}
     >

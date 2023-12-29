@@ -18,8 +18,8 @@ function SoftSkills() {
       item
       component="section"
       aria-label="soft skills section"
-      xs={10}
-      sm={8}
+      xs={11}
+      sm={9}
       md={7}
       lg={5}
       sx={{
