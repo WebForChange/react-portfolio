@@ -15,9 +15,15 @@ import Footer from "./navigation/Footer";
 import SoftSkills from "./SoftSkills";
 import ScrollDownButton from "./navigation/ScrollDownButton";
 import { Box } from "@mui/material";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [showButton, setShowButton] = useState(false);
   const theme = useTheme();
+
+  useEffect(() => {
+    setShowButton(true);
+  }, []);
 
   return (
     <Grid container justifyContent="space-evenly">
@@ -25,7 +31,8 @@ export default function Home() {
         style={{
           display: "flex",
           position: "absolute",
-          bottom: "2rem",
+          bottom: showButton ? "2rem" : "-4rem",
+          transition: "bottom 0.5s ease-in-out",
           zIndex: 10,
         }}
       >
