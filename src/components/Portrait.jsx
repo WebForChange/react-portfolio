@@ -13,7 +13,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import IMAGES from "../assets/Images";
 import ownerConstants from "../constants/ownerConstants";
-import PrimaryIconButton from "./navigation/PrimaryIconButton";
+import PrimaryIconButton from "./Navigation/PrimaryIconButton";
 
 const CustomIconButton = (props) => {
   return (
