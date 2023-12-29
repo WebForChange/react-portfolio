@@ -15,8 +15,8 @@ const About = () => {
       item
       component="section"
       aria-label="about section"
-      xs={10}
-      sm={8}
+      xs={11}
+      sm={9}
       md={7}
       lg={5}
       sx={{
@@ -24,6 +24,7 @@ const About = () => {
         alignItems: "center",
         justifyContent: "start",
         px: "2rem",
+        pt: "2rem",
         mb: "4rem",
       }}
     >
