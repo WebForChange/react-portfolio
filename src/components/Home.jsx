@@ -11,9 +11,9 @@ import Portrait from "./Portrait";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import Skills from "./Skills";
-import Footer from "./navigation/Footer";
+import Footer from "./Navigation/Footer";
 import SoftSkills from "./SoftSkills";
-import ScrollDownButton from "./navigation/ScrollDownButton";
+import ScrollDownButton from "./Navigation/ScrollDownButton";
 import { Box } from "@mui/material";
 import { useState, useEffect } from "react";
 
