@@ -11,6 +11,7 @@ import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
+import { RiLinkedinLine } from "react-icons/ri";
 import IMAGES from "../assets/Images";
 import ownerConstants from "../constants/ownerConstants";
 import PrimaryIconButton from "./Navigation/PrimaryIconButton";
@@ -158,6 +159,13 @@ export default function Portrait() {
               mb: "6vh",
             }}
           >
+            <CustomIconButton
+              aria-label="linkedIn"
+              url="https://www.linkedin.com/in/tonio-suessdorf-942b99184/"
+            >
+              <RiLinkedinLine style={{ fontSize: "1.5rem" }} />
+            </CustomIconButton>
+
             <CustomIconButton
               aria-label="email owner"
               url="mailto:suessdorf.dev@gmail.com"

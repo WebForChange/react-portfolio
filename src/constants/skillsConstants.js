@@ -33,9 +33,16 @@ const TECH_SKILLS = [
   "Vitest",
   "Node.js",
   "Express",
+  "REST API",
+  "MongoDB",
+  "Python",
+  "Tailwind",
   "Git",
+  "Github",
   "Test Driven Development",
-  "Responsive Design",
+  "Responsive Development",
+  "Jenkins (CD/CI)",
+  "C#",
 ];
 
 const SOFT_SKILLS_TITLE = "Soft Skills";
