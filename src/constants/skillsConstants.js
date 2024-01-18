@@ -51,7 +51,7 @@ const SOFT_SKILLS = [
   `I practice nonviolent communication, mindfulness, as well as a 
 solution-oriented mindset. I am always looking for opportunities to learn and to make
 constructive, sustainable contributions.`,
-  `I have an analytical talent and an good eye for detail paired with a structured way
+  `I have an analytical talent and a good eye for detail paired with a structured way
   of working and topped of with strong presentation and documentation skills. `,
 ];
 
