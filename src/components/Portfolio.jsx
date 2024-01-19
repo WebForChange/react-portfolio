@@ -58,7 +58,7 @@ export default function Portfolio() {
       sm={9}
       md={6}
       lg={5}
-      sx={{ justifyContent: "center", mb: "4rem" }}
+      sx={{ justifyContent: "center", mt: "2rem" }}
     >
       <Grid
         aria-label="portfolio back button"
@@ -84,11 +84,10 @@ export default function Portfolio() {
       <Grid
         container
         item
-        xs={12}
+        xs={10}
         sm={9}
         sx={{
           flexDirection: "column",
-          maxWidth: "100%",
           flexWrap: "nowrap",
           alignItems: "center",
           justifyContent: "center",
@@ -109,6 +108,7 @@ export default function Portfolio() {
             sx={{
               color: theme.palette.text.main,
               maxWidth: "100%",
+              mb: "1rem",
             }}
           >
             {PORTFOLIO_SECTION_TITLE}

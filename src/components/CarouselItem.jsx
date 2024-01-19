@@ -17,7 +17,13 @@ export default function CarouselItem(props) {
       component="article"
       sx={{ display: "flex", justifyContent: "center" }}
     >
-      <Box sx={{ display: "flex", maxWidth: "85%", flexDirection: "column" }}>
+      <Box
+        sx={{
+          display: "flex",
+          maxWidth: { xs: "60%", sm: "85%" },
+          flexDirection: "column",
+        }}
+      >
         <Typography
           aria-label="project title"
           variant="subtitle1"

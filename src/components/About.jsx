@@ -24,8 +24,7 @@ const About = () => {
         alignItems: "center",
         justifyContent: "start",
         px: "2rem",
-        pt: "2rem",
-        mb: "4rem",
+        mt: "2rem",
       }}
     >
       <Typography variant="h5" component="h2">
