@@ -49,7 +49,6 @@ function Skills() {
         justifyContent: "start",
         px: "2rem",
         mt: "2rem",
-        mb: "4rem",
       }}
     >
       {/* Title */}

@@ -27,7 +27,7 @@ function SoftSkills() {
         alignItems: "center",
         justifyContent: "start",
         px: "2rem",
-        mb: "4rem",
+        mt: "2rem",
       }}
     >
       <Typography
