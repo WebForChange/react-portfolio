@@ -1,7 +1,7 @@
 import React from "react";
 
 const IMAGES = {
-  portrait: "/portrait.jpg",
+  portrait: "/tonio-cropped.jpg",
 };
 
 export default IMAGES;
