@@ -43,7 +43,7 @@ export default function CarouselItem(props) {
             marginBottom: "0.5rem",
           }}
         >
-          Source Code
+          Website / Source Code
         </Link>
         <Typography aria-label="project description" align="justify">
           {project.description}
