@@ -8,8 +8,8 @@ import React, { useState } from "react";
 import { Typography, Box, Grid, IconButton } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { styled } from "@mui/system";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+// import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControl from "@mui/material/FormControl";
@@ -42,11 +42,11 @@ export default function Portfolio() {
     );
   };
 
-  const CustomIconButton = styled(IconButton)({
-    "&:hover": {
-      backgroundColor: theme.palette.primary.highlight,
-    },
-  });
+  //   const CustomIconButton = styled(IconButton)({
+  //     "&:hover": {
+  //       backgroundColor: theme.palette.primary.highlight,
+  //     },
+  //   });
 
   return (
     <Grid
@@ -70,14 +70,14 @@ export default function Portfolio() {
           alignItems: "center",
         }}
       >
-        <CustomIconButton onClick={handlePrevious}>
+        {/* <CustomIconButton onClick={handlePrevious}>
           <ArrowBackIosNewIcon
             sx={{
               fontSize: { xs: "2.3rem", md: "2.4rem", lg: "2.3rem" },
               color: theme.palette.text.alt,
             }}
           />
-        </CustomIconButton>
+        </CustomIconButton> */}
       </Grid>
 
       {/* Carousel Container */}
@@ -106,7 +106,8 @@ export default function Portfolio() {
             variant="h5"
             component="h2"
             sx={{
-              color: theme.palette.text.main,
+              color: theme.palette.primary.highlight,
+              fontWeight: "bold",
               maxWidth: "100%",
               mb: "1rem",
             }}
@@ -200,14 +201,14 @@ export default function Portfolio() {
           justifyContent: "start",
         }}
       >
-        <CustomIconButton onClick={handleNext}>
+        {/* <CustomIconButton onClick={handleNext}>
           <ArrowForwardIosIcon
             sx={{
               fontSize: { xs: "2.3rem", md: "2.4rem", lg: "2.3rem" },
               color: theme.palette.text.alt,
             }}
           />
-        </CustomIconButton>
+        </CustomIconButton> */}
       </Grid>
     </Grid>
   );

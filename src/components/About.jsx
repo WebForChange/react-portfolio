@@ -25,6 +25,7 @@ const About = () => {
         justifyContent: "start",
         px: "2rem",
         mt: "2rem",
+        mb: "2rem",
       }}
     >
       <Typography variant="h5" component="h2">

@@ -14,14 +14,16 @@ export default function PrimaryIconButton(props) {
 
   const CustomIconButton = styled(IconButton)({
     "&:hover": {
-      backgroundColor: theme.palette.primary.highlight,
+      borderColor: theme.palette.primary.highlight,
+      color: theme.palette.primary.highlight,
+      backgroundColor: theme.palette.neutral.main,
     },
   });
 
   return (
     <CustomIconButton
       sx={{
-        border: `2px solid ${theme.palette.primary.main}`,
+        border: `3px solid ${theme.palette.primary.main}`,
         backgroundColor: theme.palette.neutral.main,
         color: theme.palette.primary.main,
       }}

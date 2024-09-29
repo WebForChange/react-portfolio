@@ -76,7 +76,7 @@ export default function Portrait() {
               sx={{
                 width: "100%",
                 height: "100%",
-                border: `1px solid ${theme.palette.border.main}`,
+                // border: `1px solid ${theme.palette.border.main}`,
               }}
             />
             <Box
@@ -155,7 +155,7 @@ export default function Portrait() {
             sx={{
               ...centerAlignment,
               width: "100%",
-              mt: "4vh",
+              mt: "6vh",
               mb: "6vh",
             }}
           >

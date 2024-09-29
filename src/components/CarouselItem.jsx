@@ -7,6 +7,7 @@
 import React from "react";
 import { Typography, Box, Grid, Paper } from "@mui/material";
 import Link from "@mui/material/Link";
+import theme from "../utils/theme";
 
 export default function CarouselItem(props) {
   const project = props.item;
@@ -27,7 +28,10 @@ export default function CarouselItem(props) {
         <Typography
           aria-label="project title"
           variant="subtitle1"
-          sx={{ fontSize: "1.2rem", mb: "0.1rem" }}
+          sx={{
+            fontSize: "1.2rem",
+            mb: "0.1rem",
+          }}
         >
           {project.title}
         </Typography>
@@ -35,7 +39,9 @@ export default function CarouselItem(props) {
           aria-label="source code"
           href={project.source}
           variant="body1"
-          sx={{ marginBottom: "0.5rem" }}
+          sx={{
+            marginBottom: "0.5rem",
+          }}
         >
           Source Code
         </Link>
