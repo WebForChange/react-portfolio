@@ -10,9 +10,9 @@ const ownerConstants = {
   OWNER_LOCATION: "10999 Berlin",
   OWNER_EMAIL: "suessdorf.dev@gmail.com",
   OWNER_PHONE: "+49 15123583372",
-  SHORT_DESC: "Certified Web Developer",
+  SHORT_DESC: "Innovator",
   LONG_DESC: `M.Sc. degree in Media Informatics\n 
-  Specialized in JavaScript, React`,
+  Certified Web Developer`,
 
   IMPRINT_TITLE: "Imprint",
 };

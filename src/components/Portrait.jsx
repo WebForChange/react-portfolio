@@ -164,8 +164,8 @@ export default function Portrait() {
             sx={{
               ...centerAlignment,
               width: "100%",
-              mt: "6vh",
-              mb: "6vh",
+              mt: "3vh",
+              mb: "3vh",
             }}
           >
             <CustomIconButton
