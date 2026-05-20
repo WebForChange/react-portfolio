@@ -4,10 +4,9 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import React, { useState } from "react";
-import { Typography, Box, Grid, IconButton } from "@mui/material";
+import { useState } from "react";
+import { Typography, Grid } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { styled } from "@mui/system";
 // import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 // import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Radio from "@mui/material/Radio";
@@ -31,16 +30,6 @@ const centerAlignment = {
 export default function Portfolio() {
   const [activeIndex, setActiveIndex] = useState(0);
   const theme = useTheme();
-
-  const handleNext = () => {
-    setActiveIndex((activeIndex + 1) % CAROUSEL_ITEMS.length);
-  };
-
-  const handlePrevious = () => {
-    setActiveIndex(
-      (activeIndex - 1 + CAROUSEL_ITEMS.length) % CAROUSEL_ITEMS.length
-    );
-  };
 
   //   const CustomIconButton = styled(IconButton)({
   //     "&:hover": {

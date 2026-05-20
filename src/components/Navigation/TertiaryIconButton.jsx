@@ -4,7 +4,6 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import React from "react";
 import { IconButton } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { styled } from "@mui/system";

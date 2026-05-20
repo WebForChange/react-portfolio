@@ -4,14 +4,10 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import React from "react";
-import { Typography, Box, Grid } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import { Typography, Grid } from "@mui/material";
 import { SOFT_SKILLS, SOFT_SKILLS_TITLE } from "../constants/skillsConstants";
 
 function SoftSkills() {
-  const theme = useTheme();
-
   return (
     <Grid
       container

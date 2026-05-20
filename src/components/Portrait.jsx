@@ -4,24 +4,34 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
-import { AiOutlineMail } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { RiLinkedinLine } from "react-icons/ri";
 import IMAGES from "../assets/Images";
 import ownerConstants from "../constants/ownerConstants";
 import PrimaryIconButton from "./Navigation/PrimaryIconButton";
+import EmailContactButton from "./Navigation/EmailContactButton";
+import { safeProfileHrefOrNull } from "../utils/urlUtils";
 
 const CustomIconButton = (props) => {
+  const safeUrl = safeProfileHrefOrNull(props.url);
+  const isMailto = safeUrl?.startsWith("mailto:");
+
   return (
     <Grid item sx={{ px: "0.35rem" }}>
-      <a target="_top" rel="noopener noreferrer" href={props.url}>
-        <PrimaryIconButton>{props.children}</PrimaryIconButton>
-      </a>
+      <PrimaryIconButton
+        aria-label={props["aria-label"]}
+        href={safeUrl ?? undefined}
+        disabled={!safeUrl}
+        {...(safeUrl && !isMailto
+          ? { target: "_blank", rel: "noopener noreferrer" }
+          : {})}
+      >
+        {props.children}
+      </PrimaryIconButton>
     </Grid>
   );
 };
@@ -166,12 +176,7 @@ export default function Portrait() {
               <RiLinkedinLine style={{ fontSize: "1.5rem" }} />
             </CustomIconButton>
 
-            <CustomIconButton
-              aria-label="email owner"
-              url="mailto:suessdorf.dev@gmail.com"
-            >
-              <AiOutlineMail style={{ fontSize: "1.5rem" }} />
-            </CustomIconButton>
+            <EmailContactButton />
 
             <CustomIconButton
               aria-label="github"

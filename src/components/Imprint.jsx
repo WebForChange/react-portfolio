@@ -4,7 +4,6 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import React from "react";
 import { Typography, Grid } from "@mui/material";
 import ownerConstants from "../constants/ownerConstants";
 import { styled } from "@mui/system";

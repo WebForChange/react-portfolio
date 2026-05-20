@@ -4,7 +4,6 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import React from "react";
 import { NavLink } from "react-router-dom";
 import { Box, Grid, Typography } from "@mui/material";
 

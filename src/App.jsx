@@ -4,9 +4,7 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Fragment } from "react";
 import {
   Route,
   RouterProvider,

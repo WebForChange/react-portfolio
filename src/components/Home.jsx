@@ -4,9 +4,7 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import React from "react";
 import Grid from "@mui/material/Grid";
-import { useTheme } from "@mui/material/styles";
 import Portrait from "./Portrait";
 import About from "./About";
 import Portfolio from "./Portfolio";
@@ -19,7 +17,6 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
-  const theme = useTheme();
 
   useEffect(() => {
     setShowButton(true);

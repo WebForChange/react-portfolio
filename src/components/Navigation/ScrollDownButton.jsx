@@ -4,18 +4,12 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import React, { useState } from "react";
 import PrimaryIconButton from "./PrimaryIconButton";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Paper from "@mui/material/Paper";
 import { Box } from "@mui/material";
 
 const ScrollDownButton = () => {
-  const handleButtonClick = () => {
-    const pageHeight = window.innerHeight;
-    window.scrollBy({ left: 0, top: pageHeight - 60, behavior: "smooth" });
-  };
-
   return (
     <Box
       component={Paper}

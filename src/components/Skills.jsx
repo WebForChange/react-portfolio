@@ -4,7 +4,6 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import React from "react";
 import { Typography, Box, Grid } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import {
@@ -16,9 +15,10 @@ import {
 function Skills() {
   const theme = useTheme();
 
-  const skillIcons = SKILL_ICONS.map((IconTag) => {
+  const skillIcons = SKILL_ICONS.map((IconTag, index) => {
     return (
       <Box
+        key={IconTag.displayName ?? IconTag.name ?? `skill-icon-${index}`}
         sx={{
           display: "inline-flex",
           mr: "0.5rem",
