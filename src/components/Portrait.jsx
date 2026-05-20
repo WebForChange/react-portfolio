@@ -8,7 +8,6 @@ import { Box, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
-import { FiGithub } from "react-icons/fi";
 import { RiLinkedinLine } from "react-icons/ri";
 import IMAGES from "../assets/Images";
 import ownerConstants from "../constants/ownerConstants";
@@ -177,13 +176,6 @@ export default function Portrait() {
             </CustomIconButton>
 
             <EmailContactButton />
-
-            <CustomIconButton
-              aria-label="github"
-              url="https://github.com/WebForChange"
-            >
-              <FiGithub style={{ fontSize: "1.5rem" }} />
-            </CustomIconButton>
           </Grid>
         </Grid>
       </Grid>
