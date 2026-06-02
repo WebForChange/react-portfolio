@@ -8,7 +8,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
-import { RiLinkedinLine } from "react-icons/ri";
+import { RiLinkedinLine, RiRocketLine } from "react-icons/ri";
 import IMAGES from "../assets/Images";
 import ownerConstants from "../constants/ownerConstants";
 import PrimaryIconButton from "./Navigation/PrimaryIconButton";
@@ -173,6 +173,13 @@ export default function Portrait() {
               url="https://www.linkedin.com/in/tonio-suessdorf-942b99184/"
             >
               <RiLinkedinLine style={{ fontSize: "1.5rem" }} />
+            </CustomIconButton>
+
+            <CustomIconButton
+              aria-label="Lean Solution project"
+              url="https://lean-solution.vercel.app"
+            >
+              <RiRocketLine style={{ fontSize: "1.5rem" }} />
             </CustomIconButton>
 
             <EmailContactButton />
