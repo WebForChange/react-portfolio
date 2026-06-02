@@ -5,7 +5,7 @@
  */
 
 import { NavLink } from "react-router-dom";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 export default function Footer() {
   return (
@@ -13,28 +13,23 @@ export default function Footer() {
       component="footer"
       sx={{ backgroundColor: "#fefaec", width: "100vw", mt: "4rem" }}
     >
-      <Grid
-        container
-        spacing={2}
+      <Box
         sx={{
           display: "flex",
           mt: "15px",
           mb: "30px",
           justifyContent: "center",
           alignItems: "center",
+          gap: 2,
         }}
       >
-        <Grid item style={{ paddingTop: "0px" }}>
-          <NavLink to="/privacy" style={{ textDecoration: "none" }}>
-            <Typography sx={{ color: "#403d39" }}>Privacy Policy</Typography>
-          </NavLink>
-        </Grid>
-        <Grid item style={{ paddingTop: "0px" }}>
-          <NavLink to="/imprint" style={{ textDecoration: "none" }}>
-            <Typography sx={{ color: "#403d39" }}>Imprint</Typography>
-          </NavLink>
-        </Grid>
-      </Grid>
+        <NavLink to="/privacy" style={{ textDecoration: "none" }}>
+          <Typography sx={{ color: "#403d39" }}>Privacy Policy</Typography>
+        </NavLink>
+        <NavLink to="/imprint" style={{ textDecoration: "none" }}>
+          <Typography sx={{ color: "#403d39" }}>Imprint</Typography>
+        </NavLink>
+      </Box>
     </Box>
   );
 }

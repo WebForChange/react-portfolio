@@ -4,7 +4,7 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
@@ -20,7 +20,7 @@ const CustomIconButton = (props) => {
   const isMailto = safeUrl?.startsWith("mailto:");
 
   return (
-    <Grid item sx={{ px: "0.35rem" }}>
+    <Box sx={{ px: "0.35rem" }}>
       <PrimaryIconButton
         aria-label={props["aria-label"]}
         href={safeUrl ?? undefined}
@@ -31,7 +31,7 @@ const CustomIconButton = (props) => {
       >
         {props.children}
       </PrimaryIconButton>
-    </Grid>
+    </Box>
   );
 };
 
@@ -50,23 +50,18 @@ export default function Portrait() {
       aria-label="portrait section"
       sx={{ display: "flex", width: "100vw" }}
     >
-      <Grid
-        item
-        container
-        xs={12}
+      <Box
         sx={{
           ...centerAlignment,
+          width: "100%",
           height: "100dvh",
         }}
       >
-        <Grid
-          item
-          container
-          xs={12}
-          md={3}
+        <Box
           sx={{
             ...centerAlignment,
             flexDirection: "column",
+            width: { xs: "100%", md: "25%" },
           }}
         >
           <Box
@@ -85,7 +80,6 @@ export default function Portrait() {
               sx={{
                 width: "100%",
                 height: "100%",
-                // border: `1px solid ${theme.palette.border.main}`,
               }}
             />
             <Box
@@ -140,7 +134,7 @@ export default function Portrait() {
             align="center"
             aria-label="owner name"
             sx={{
-              display: { sx: "flex", md: "none" },
+              display: { xs: "flex", md: "none" },
               mt: "4vh",
               color: theme.palette.text.dark,
               letterSpacing: "2px",
@@ -151,7 +145,7 @@ export default function Portrait() {
           <Typography
             aria-label="owner short description"
             sx={{
-              display: { sx: "flex", md: "none" },
+              display: { xs: "flex", md: "none" },
               color: theme.palette.text.alt,
             }}
           >
@@ -159,8 +153,7 @@ export default function Portrait() {
           </Typography>
 
           {/* Icon Buttons */}
-          <Grid
-            container
+          <Box
             sx={{
               ...centerAlignment,
               width: "100%",
@@ -183,9 +176,9 @@ export default function Portrait() {
             </CustomIconButton>
 
             <EmailContactButton />
-          </Grid>
-        </Grid>
-      </Grid>
+          </Box>
+        </Box>
+      </Box>
     </Box>
   );
 }

@@ -4,7 +4,7 @@
  * Copyright (c) 2023 Tonio Suessdorf
  */
 
-import { Typography, Grid } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import ownerConstants from "../constants/ownerConstants";
 import { styled } from "@mui/system";
 
@@ -16,8 +16,7 @@ const StyledBodyParagraph = styled(Typography)({
 
 export default function Imprint() {
   return (
-    <Grid
-      container
+    <Box
       component="article"
       aria-label="imprint page"
       sx={{
@@ -28,7 +27,7 @@ export default function Imprint() {
         backgroundColor: "#fefaec",
       }}
     >
-      <Grid item xs={10} sm={8} md={6} lg={5}>
+      <Box sx={{ width: { xs: "83%", sm: "66%", md: "50%", lg: "41%" } }}>
         <Typography
           variant="h4"
           component="h1"
@@ -59,7 +58,7 @@ export default function Imprint() {
         <StyledBodyParagraph variant="body" aria-label="owner phone">
           {ownerConstants.OWNER_PHONE}
         </StyledBodyParagraph>
-      </Grid>
-    </Grid>
+      </Box>
+    </Box>
   );
 }

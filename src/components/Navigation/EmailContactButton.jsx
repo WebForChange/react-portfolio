@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Grid, Snackbar } from "@mui/material";
+import { Box, Snackbar } from "@mui/material";
 import { AiOutlineMail } from "react-icons/ai";
 import ownerConstants from "../../constants/ownerConstants";
 import PrimaryIconButton from "./PrimaryIconButton";
@@ -22,7 +22,7 @@ export default function EmailContactButton() {
   };
 
   return (
-    <Grid item sx={{ px: "0.35rem" }}>
+    <Box sx={{ px: "0.35rem" }}>
       <PrimaryIconButton
         aria-label={`Email ${ownerConstants.OWNER_EMAIL}`}
         title={`Email ${ownerConstants.OWNER_EMAIL}`}
@@ -39,6 +39,6 @@ export default function EmailContactButton() {
         message={`Copied ${ownerConstants.OWNER_EMAIL} — paste into your email app if nothing opens`}
         anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
       />
-    </Grid>
+    </Box>
   );
 }
